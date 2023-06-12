@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+        1. 创建对象
+            id: 对象唯一标识符，相当于对象的名称
+            class: 对象的全限定类名，相当于对象的类型
+            property: 对象的属性
+                name: 对象的属性名称
+                value: 对象的属性值
+            -->
+    <bean id="hello" class="com.nie.pojo.Hello">
+        <property name="name" value="Spring"/>
+    </bean>
+
+    <bean id="user" class="com.nie.pojo.User">
+<!--        <constructor-arg name="name" value="Akihi"/>-->
+<!--        <constructor-arg index="0" value="Akihi"/>-->
+
+<!--        不建议使用-->
+<!--        <constructor-arg type="java.lang.String" value="Akihi"/>-->
+        <constructor-arg name="name" value="Akihi"/>
+        <constructor-arg name="id" value="20"/>
+    </bean>
+
+
+</beans>

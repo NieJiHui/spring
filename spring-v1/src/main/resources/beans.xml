@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDao" class="com.njh.dao.UserDaoImpl"/>
+    <bean id="mysqlDao" class="com.njh.dao.UserDaoMysqlImpl"/>
+
+    <bean id="userService" class="com.njh.service.UserServiceImpl">
+        <!-- ref: 引用类型，指向另外一个 bean 的 id -->
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+</beans>
