@@ -13,6 +13,10 @@
         <module>spring-v2</module>
         <module>spring-v3</module>
         <module>spring-v4</module>
+        <module>Spring-v6-anno</module>
+        <module>spring-v7-appConfig</module>
+        <module>spring-v8-proxy</module>
+        <module>spring-v9-aop</module>
     </modules>
 
     <properties>
@@ -47,6 +51,12 @@
             <artifactId>testng</artifactId>
             <version>6.14.3</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.4</version>
         </dependency>
     </dependencies>
 
